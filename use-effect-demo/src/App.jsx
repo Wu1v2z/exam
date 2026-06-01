@@ -13,7 +13,7 @@ function App() {
   // 2. useEffect БЕЗ МАСИВУ
   useEffect(() => {
     console.log(`🔴 [БЕЗ МАСИВУ]: Я виконуюсь після кожного рендеру! Лічильник: ${count}`)
-  }) // <-- Тут дужок немає взагалі
+  }) // Тут дужок немає взагалі
 
   return (
     <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
