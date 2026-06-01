@@ -8,7 +8,7 @@ function UserProfile() {
     fetch('https://jsonplaceholder.typicode.com/users/1')
       .then(response => response.json())
       .then(data => setUser(data));
-  }, []); // <-- Пустий масив залежностей
+  }, []); // Пустий масив залежностей
 
   return <div>{user ? user.name : "Завантаження..."}</div>;
 }
