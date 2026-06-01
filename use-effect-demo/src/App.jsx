@@ -2,18 +2,18 @@ import { useState, useEffect } from 'react'
 import './App.css'
 
 function App() {
-  // Створюємо стан лічильника, щоб могти оновлювати компонент (робити рендер)
+  // Створюємо стан лічильника, щоб могти оновлювати компонент
   const [count, setCount] = useState(0)
 
   // 1. useEffect З ПУСТИМ МАСИВОМ []
   useEffect(() => {
     console.log("🟢 [З ПУСТИМ МАСИВОМ]: Я виконався лише один раз при завантаженні (Mount)!")
-  }, []) // <-- Зверни увагу на ці дужки
+  }, []) 
 
   // 2. useEffect БЕЗ МАСИВУ
   useEffect(() => {
     console.log(`🔴 [БЕЗ МАСИВУ]: Я виконуюсь після кожного рендеру! Лічильник: ${count}`)
-  }) // Тут дужок немає взагалі
+  }) 
 
   return (
     <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
